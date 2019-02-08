@@ -1,0 +1,32 @@
+<h2>Usuarios</h2>
+
+<div class="table-responsive">
+
+  <table class="table table-bordered">
+    <thead class="bg-slate-400">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+
+        <th scope="col"><strong>Acciones</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios; let i = index">
+        <td>
+          {{usuario.usuarioid}}
+        </td>
+        <td>
+          {{usuario.nombre}}
+        </td>
+        <td class="buttons-table">
+          <button class="botones text-slate-800" type="button" (click)="irAEditar(usuario.usuarioid)">Editar</button>
+          <button class="botones text-slate-800" type="button" (click)="irABorrar(usuario.usuarioid)">Borrar</button>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</div>
+

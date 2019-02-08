@@ -1,0 +1,58 @@
+<div class="panel panel-flat">
+
+  <div class="panel-body">
+    <div class="panel-heading">
+      <h2>Editar Boliche</h2>
+    </div>
+    <!-- // pregunta -->
+    <div class="form-group">
+      <label>Nombre del local</label>
+      <input class="form-control" type="text" name="pregunta" [(ngModel)]="local.nombre">
+    </div>
+
+    <!-- // respuesta -->
+    <div class="form-group">
+      <label>Descripcion</label>
+      <textarea name="respuesta" [(ngModel)]="local.descripcion" class="form-control" type="text" cols="30" rows="10"
+        maxlength="500"></textarea>
+    </div>
+
+    <!-- // pregunta -->
+    <div class="form-group">
+      <label>Direccion</label>
+      <input class="form-control" type="text" name="pregunta" [(ngModel)]="local.direccion">
+    </div>
+
+    <!-- // respuesta -->
+    <div class="form-group">
+      <label>Imagen principal</label>
+      <input type="file" (change)="onFileChanged($event)">
+      <img [src]="foto" style="width: 100px; height: 100px;" alt="" />
+
+    </div>
+
+    <div class="form-group">
+      <label>Imagen principal actual</label>
+      <img [src]="fotoactual" style="width: 100px; height: 100px;" alt="" />
+    </div>
+
+    <!-- // respuesta -->
+    <div class="form-group">
+      <label>Logo</label>
+      <input type="file" (change)="onFileChangedLogo($event)">
+      <img [src]="logo" alt="" style="width: 100px; height: 100px;" />
+
+    </div>
+    <div class="form-group">
+      <label>Logo actual</label>
+      <img [src]="logoactual" alt="" style="width: 100px; height: 100px;" />
+    </div>
+
+
+
+    <button class="bg-white margin padding btn border-slate text-slate-800 btn-flat legitRipple" type="button" (click)="editarLocal()">
+      Editar boliche
+    </button>
+  </div>
+
+</div>

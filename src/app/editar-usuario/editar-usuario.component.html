@@ -1,0 +1,42 @@
+<div class="panel panel-flat">
+    
+    <div class="panel-body">
+      <div class="panel-heading">
+        <h2>Editar Boliche</h2>
+      </div>
+      <!-- // pregunta -->
+    <div class="form-group">
+        <label>Nombre</label>
+        <input class="form-control" type="text" name="pregunta" [(ngModel)]="usuario.nombre">
+      </div>
+  
+      <!-- // respuesta -->
+      <div class="form-group">
+        <label>Apellido</label>
+        <input class="form-control" type="text" name="pregunta" [(ngModel)]="usuario.apellido">
+      </div>
+  
+      <!-- // pregunta -->
+      <div class="form-group">
+        <label>Email</label>
+        <input class="form-control" type="text" name="pregunta" [(ngModel)]="usuario.email">
+      </div>
+  
+      <!-- // respuesta -->
+      <div class="form-group">
+        <label>Password</label>
+        <input class="form-control" type="text" name="pregunta" [(ngModel)]="usuario.password">
+      </div>
+  
+      <!-- // respuesta -->
+      <div class="form-group">
+        <label>Repetir Password</label>
+        <input class="form-control" type="text" name="pregunta" [(ngModel)]="usuario.repetirpassword">
+      </div>
+
+      <button class="bg-white margin padding btn border-slate text-slate-800 btn-flat legitRipple" type="button" (click)="edtiarUsuario()">
+        Editar usuario
+      </button>
+    </div>
+  
+  </div>

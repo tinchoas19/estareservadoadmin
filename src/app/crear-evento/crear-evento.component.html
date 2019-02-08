@@ -1,0 +1,62 @@
+<div class="panel panel-flat">
+  <div class="panel-heading">
+    <h2>Crear evento</h2>
+  </div>
+  <div class="panel-body">
+
+    <!-- // pregunta -->
+    <div class="form-group">
+      <label>Nombre</label>
+      <input class="form-control" type="text" name="pregunta" [(ngModel)]="nombre">
+    </div>
+
+    <!-- // respuesta -->
+    <div class="form-group">
+      <label>Precio</label>
+      <input class="form-control" type="text" name="pregunta" [(ngModel)]="precio">
+    </div>
+
+    <!-- // respuesta -->
+    <div class="form-group">
+      <label>Cantidad de entradas</label>
+      <input class="form-control" type="text" name="pregunta" [(ngModel)]="entradas">
+    </div>
+
+    <div class="form-group">
+      <label>Fecha desde</label>
+      <input class="form-control" type="date" name="pregunta" [(ngModel)]="fechadesde">
+    </div>
+
+    <div class="form-group">
+      <label>Fecha hasta</label>
+      <input class="form-control" type="date" name="pregunta" [(ngModel)]="fechahasta">
+    </div>
+
+    <div class="form-group">
+      <label>Hora desde</label>
+      <select name="" id="" [(ngModel)]="horadesde">
+        <option *ngFor="let hora of horas" [value]="hora">{{hora}}</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Hora hasta</label>
+      <select name="" id="" [(ngModel)]="horahasta">
+        <option *ngFor="let hora of horas" [value]="hora">{{hora}}</option>
+      </select>
+    </div>
+
+    <!-- // respuesta -->
+    <div class="form-group">
+      <label>Imagen principal</label>
+      <input type="file" (change)="onFileChanged($event)">
+      <img [src]="imagen" style="width: 100px; height: 100px;" alt="" />
+    </div>
+
+
+    <button class="bg-white margin padding btn border-slate text-slate-800 btn-flat legitRipple" type="button" (click)="crearEvento()">
+      Crear evento
+    </button>
+  </div>
+
+</div>

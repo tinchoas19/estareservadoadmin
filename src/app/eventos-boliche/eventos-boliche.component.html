@@ -1,0 +1,35 @@
+<h2>Eventos</h2>
+
+<div class="table-responsive">
+
+  <table class="table table-bordered">
+    <thead class="bg-slate-400">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+
+        <th scope="col"><strong>Acciones</strong></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let evento of eventos; let i = index">
+        <td>
+          {{evento.id}}
+        </td>
+        <td>
+          {{evento.nombre}}
+        </td>
+        <td class="buttons-table">
+          <button class="botones text-slate-800" type="button" (click)="irAEditar(evento.id)">Editar</button>
+          <button class="botones text-slate-800" type="button" (click)="borrarEvento(evento.id)">Borrar</button>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</div>
+
+
+<button class="bg-white margin padding btn border-slate text-slate-800 btn-flat legitRipple" type="button" routerLink="/home/add-faqs">Agregar
+  FAQ</button>

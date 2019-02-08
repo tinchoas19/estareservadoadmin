@@ -1,0 +1,45 @@
+<h2>Patovas</h2>
+
+<div class="table-responsive">
+
+  <table class="table table-bordered">
+    <thead class="bg-slate-400">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+      
+        <th scope="col"><strong>Acciones</strong></th>
+      </tr>
+    </thead>
+
+
+    <tbody>
+
+
+      <tr *ngFor="let patovas of listPatovas; let i = index">
+
+        <td>
+          {{patovas.id}}
+        </td>
+
+        <td>
+          {{patovas.nombre}}
+        </td>
+
+   
+
+        <td class="buttons-table">
+          <button class="botones text-slate-800" type="button" (click)="irAEditar(patovas.id)">Editar</button>
+          <button class="botones text-slate-800" type="button" (click)="irABorrar(patovas.id)">Borrar</button>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+
+</div>
+
+
+<button class="bg-white margin padding btn border-slate text-slate-800 btn-flat legitRipple" type="button" routerLink="/home/crear-patova">
+  Agregar Patova
+</button>

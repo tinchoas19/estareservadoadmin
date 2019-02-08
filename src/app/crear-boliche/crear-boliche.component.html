@@ -1,0 +1,80 @@
+<div class="panel panel-flat">
+  <div class="panel-heading">
+    <h2>Crear usuario boliche</h2>
+  </div>
+  <div class="panel-body">
+
+    <!-- // pregunta -->
+    <div class="form-group">
+      <label>Nombre</label>
+      <input class="form-control" type="text" name="pregunta" [(ngModel)]="nombre">
+    </div>
+
+    <!-- // respuesta -->
+    <div class="form-group">
+      <label>Apellido</label>
+      <input class="form-control" type="text" name="pregunta" [(ngModel)]="apellido">
+    </div>
+
+    <!-- // pregunta -->
+    <div class="form-group">
+      <label>Email</label>
+      <input class="form-control" type="text" name="pregunta" [(ngModel)]="email">
+    </div>
+
+    <!-- // respuesta -->
+    <div class="form-group">
+      <label>Password</label>
+      <input class="form-control" type="text" name="pregunta" [(ngModel)]="password">
+    </div>
+
+    <!-- // respuesta -->
+    <div class="form-group">
+      <label>Repetir Password</label>
+      <input class="form-control" type="text" name="pregunta" [(ngModel)]="repetirpassword">
+    </div>
+  
+  </div>
+  <div class="panel-body">
+    <div class="panel-heading">
+      <h2>Crear Boliche</h2>
+    </div>
+    <!-- // pregunta -->
+    <div class="form-group">
+      <label>Nombre del local</label>
+      <input class="form-control" type="text" name="pregunta" [(ngModel)]="nombreboliche">
+    </div>
+
+    <!-- // respuesta -->
+    <div class="form-group">
+      <label>Descripcion</label>
+      <textarea name="respuesta" [(ngModel)]="descripcion" class="form-control" type="text" cols="30" rows="10" maxlength="500"></textarea>
+    </div>
+
+    <!-- // pregunta -->
+    <div class="form-group">
+      <label>Direccion</label>
+      <input class="form-control" type="text" name="pregunta" [(ngModel)]="direccion">
+    </div>
+
+    <!-- // respuesta -->
+    <div class="form-group">
+      <label>Imagen principal</label>
+      <input type="file" (change)="onFileChanged($event)">
+      <img [src]="imagen" style="width: 100px; height: 100px;" alt="" />
+    </div>
+
+    <!-- // respuesta -->
+    <div class="form-group">
+      <label>Logo</label>
+      <input type="file" (change)="onFileChangedLogo($event)">
+      <img [src]="logo" alt="" style="width: 100px; height: 100px;" />
+    </div>
+
+
+
+    <button class="bg-white margin padding btn border-slate text-slate-800 btn-flat legitRipple" type="button" (click)="crearboliche()">Crear
+      boliche</button>
+  </div>
+
+</div>
