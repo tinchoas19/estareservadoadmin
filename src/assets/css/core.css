@@ -18,7 +18,7 @@
  *  Latest update: May 25, 2015
  *
  * ---------------------------------------------------------------------------- */
-@font-face {
+ @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('../css/icons/glyphicons/glyphicons-halflings-regular.eot');
   src: url('../css/icons/glyphicons/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../css/icons/glyphicons/glyphicons-halflings-regular.woff2') format('woff2'), url('../css/icons/glyphicons/glyphicons-halflings-regular.woff') format('woff'), url('../css/icons/glyphicons/glyphicons-halflings-regular.ttf') format('truetype'), url('../css/icons/glyphicons/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
@@ -323,6 +323,15 @@ a.bg-primary:focus {
 .bg-success {
   color: #fff;
   background-color: #4CAF50;
+}
+.btn.bg-grad{
+  background-color: #009fa8;
+  background: -moz-linear-gradient(left, #009fa8 0%, #006eb1 100%);
+  background: -webkit-linear-gradient(left, #009fa8 0%,#006eb1 100%);
+  background: linear-gradient(to right, #009fa8 0%,#006eb1 100%);
+  color: #fff;
+  text-transform: none;
+  margin: 10px 0;
 }
 a.bg-success:hover,
 a.bg-success:focus {
@@ -1002,6 +1011,10 @@ th {
 .table-bordered tr > th[class*=bg-],
 .table-bordered tr > td[class*=bg-] {
   border-color: #fff;
+}
+.plain-btn{
+  border: none;
+  background: transparent;
 }
 .panel[class*=bg-] .table-striped > tbody > tr:nth-child(odd),
 .table-striped[class*=bg-] > tbody > tr:nth-child(odd) {

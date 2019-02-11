@@ -1,0 +1,42 @@
+@media(min-width:768px){
+    .page-container{
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+}
+
+.sidebar .sidebar-content{
+    background-color: #009fa8;
+    background: -moz-linear-gradient(top, #009fa8 0%, #006eb1 100%);
+    background: -webkit-linear-gradient(top, #009fa8 0%,#006eb1 100%);
+    background: linear-gradient(to bottom, #009fa8 0%,#006eb1 100%);
+}
+
+.navigation > li.active > a{
+    background: transparent;
+    color: #fff;
+}
+
+.sidebar-user-material .category-content{
+    background: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.sidebar-user-material-content .legitRipple {
+    border-radius: 0;
+}
+
+.sidebar-user-material-content > a {
+    box-shadow: none;
+}
+
+.sidebar-user-material-content > a > img{
+    height: auto;
+}
+
+.bg-grad{
+    background-color: #009fa8;
+    background: -moz-linear-gradient(top, #009fa8 0%, #006eb1 100%);
+    background: -webkit-linear-gradient(top, #009fa8 0%,#006eb1 100%);
+    background: linear-gradient(to bottom, #009fa8 0%,#006eb1 100%);
+}
